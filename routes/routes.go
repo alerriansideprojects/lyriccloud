@@ -13,9 +13,12 @@ func GetRoutes() *gin.Engine {
 
 	// Application
 	router.GET("/", handlers.AppIndex)
+	router.GET("/artists", handlers.ArtistsIndex)
 
 	// API Index
 	router.GET("/api/v0", handlers.APIIndex)
+
+	// Artists Related Routes
 
 	// User related routes
 	// router.POST("/api/v0/users", handlers.CreateUser)
